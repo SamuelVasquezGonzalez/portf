@@ -1,0 +1,65 @@
+.footer{
+    background-image: url(../multimedia/montañasAbajo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 320px;
+}
+
+.redes{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.red{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: white;
+    margin: 12px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 5px rgb(29, 29, 29);
+    color: #173040;
+    font-size: 20px;
+}
+
+.red:hover{
+    background-color:aquamarine;
+}
+
+.de{
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    padding: 12px;
+    color: #173040;
+    font-size: 2em;
+}
+
+.boton:hover{
+    background-color:aquamarine;
+}
+
+.line{
+    text-decoration: underline;
+}

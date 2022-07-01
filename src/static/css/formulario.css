@@ -1,0 +1,37 @@
+.formulario{
+    padding: 12px;
+    background-color: #0e1c2586;
+    border-radius: 12px;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    padding: 7px;
+    margin: 7px 0;
+    color: rgb(110, 110, 110) !important;
+}
+
+.text-area{
+    padding: 7px;
+    margin: 7px 0;
+    height: 150px;
+    width: 100%;
+    resize: none;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.text-area:focus{
+    outline: none;
+}
+
+.btn-enviar{
+    color: black;
+    height: 35px;
+    cursor: pointer;
+}

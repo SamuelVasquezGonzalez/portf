@@ -1,0 +1,55 @@
+@media screen and (max-width: 850px){
+    .formulario{
+        width: 70%;
+    }
+}
+
+/* 699px */
+@media screen and (max-width: 699px) {
+    .tarjetas{
+        flex-wrap: wrap;
+    }
+
+    .tarjeta{
+        margin: 24px 24px;
+    }
+    
+    .container{
+        width: 80%;
+    }
+
+    .info{
+        width: 80%;
+    }
+
+    h1{
+        font-size: 5em;
+    }
+
+    .footer{
+        background-position: 0 100%;
+    }
+}
+
+/* 480px */
+@media screen and (max-width: 480px){
+    li{
+        margin: 5px;
+    }
+
+    .activo::before{
+        bottom: 5px;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+}
+
+/* 455px */
+@media screen and (max-width: 445px){
+    .formulario{
+        width: 80%;
+    }
+}
+

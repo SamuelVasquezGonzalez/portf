@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'samulogo';
+  src: url('../font/samulogo.eot?96718098');
+  src: url('../font/samulogo.eot?96718098#iefix') format('embedded-opentype'),
+       url('../font/samulogo.woff2?96718098') format('woff2'),
+       url('../font/samulogo.woff?96718098') format('woff'),
+       url('../font/samulogo.ttf?96718098') format('truetype'),
+       url('../font/samulogo.svg?96718098#samulogo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'samulogo';
+    src: url('../font/samulogo.svg?96718098#samulogo') format('svg');
+  }
+}
+*/
+[class^="sam"]:before, [class*=" sam"]:before {
+  font-family: "samulogo";
+  font-style: normal;
+}
+
+.samsamuellogo:before { content: '\e800'; } /* '' */
