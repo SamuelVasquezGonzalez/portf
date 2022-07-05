@@ -120,6 +120,11 @@ canvas{
     margin-bottom: 50px;
 }
 
+.sin-negro{
+    width: 100%;
+    mix-blend-mode: screen;
+}
+
 .info{
     width: 35%;
     display: flex;
@@ -157,8 +162,9 @@ canvas{
 }
 
 .pequeña{
-    width: 100px;
-    height: 105px;
+    width: 35%;
+    height: auto;
+    object-fit: cover;
 }
 
 .samsamuellogo{
