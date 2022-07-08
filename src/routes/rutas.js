@@ -1,5 +1,4 @@
 const app = require('../config/server');
-const https = require('https')
 require('colors')
 const mysqlConnection = require('../config/db');
 
@@ -20,6 +19,10 @@ app.get('/correos', (req, res) =>{
     });
 });
 
+app.get('/recibircorreos', (req, res)=>{
+    res.send('Correos Enviados')
+})
+
 app.post('/recibircorreos', (req, res)=>{
     const { nombre, correo, mensaje} = req.body;
     mysqlConnection.query('INSERT INTO correos SET?', {
@@ -35,4 +38,10 @@ app.post('/recibircorreos', (req, res)=>{
     });
 })
 
-// app.post('/recibircorreos', (req, res))
+app.all('*', (req, res)=>{
+    const badUrl = req.originalUrl;
+    console.log(badUrl)
+    res.render('../views/404.ejs', {
+        ruta: badUrl
+    });
+})

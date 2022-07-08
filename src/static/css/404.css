@@ -1,0 +1,39 @@
+.sinbg{
+    background: none;
+}
+
+.err{
+    width: 60%;
+    height: 100vh;
+    margin: 0 0 0 25%;
+    position: relative;
+}
+
+.err > img{
+    width: 80%;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 69px;
+    position: absolute;
+    top: 340px;
+    right: 300px;
+    height: 200px;
+    width: 400px;
+}
+
+.modal > h4{
+    color: black !important;
+}
+
+.modal > a{
+    color: rgb(46, 46, 46) !important;
+}
+
+.modal > a:hover{
+    text-decoration: underline;
+}

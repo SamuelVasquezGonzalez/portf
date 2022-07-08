@@ -28,3 +28,9 @@ if(screen.width < 399){
 }else{
     aButton.innerHTML = 'Acerca de';
 }
+
+let changeText = document.querySelector('#changeText')
+btnEnviar.addEventListener('click', ()=>{
+    changeText.innerText = 'Correo Enviado Correctamente :)'
+
+})

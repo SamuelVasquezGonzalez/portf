@@ -6,6 +6,8 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+    height: 364px;
 }
 
 .input{
