@@ -40,7 +40,6 @@ app.post('/recibircorreos', (req, res)=>{
 
 app.all('*', (req, res)=>{
     const badUrl = req.originalUrl;
-    console.log(badUrl)
     res.render('../views/404.ejs', {
         ruta: badUrl
     });

@@ -40,6 +40,12 @@ canvas{
     flex-direction: column;
 }
 
+.yo{
+    width: 150px;
+    height: 140px;
+    object-fit: cover;
+}
+
 .img-moneda > img{
     border-radius: 50%;
     width: 94%;
@@ -155,6 +161,12 @@ canvas{
     align-items: center;
     width: 300px;
     margin: 12px 16px;
+    
+    transition: 0.3s all ease;
+}
+
+.habilidad:hover{
+    transform: scale(1.1);
 }
 
 .hab{
