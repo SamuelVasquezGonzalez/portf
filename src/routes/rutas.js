@@ -19,11 +19,7 @@ app.get('/correos', (req, res) =>{
     });
 });
 
-app.get('/recibircorreos', (req, res)=>{
-    res.send('Correos Enviados')
-})
-
-app.post('/recibircorreos', (req, res)=>{
+app.post('/correos', (req, res)=>{
     const { nombre, correo, mensaje} = req.body;
     mysqlConnection.query('INSERT INTO correos SET?', {
         nombre,
