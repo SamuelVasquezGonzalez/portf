@@ -1,7 +1,7 @@
 .header{
     padding: 0 7px;
     width: 100%;
-    margin: auto;
+    margin: 58px auto;
 }
 
 .container{
@@ -41,7 +41,7 @@ canvas{
 }
 
 .yo{
-    width: 150px;
+    width: 130px;
     height: 140px;
     object-fit: cover;
 }
@@ -64,6 +64,7 @@ canvas{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 254px;
     margin: auto;
 }
 
@@ -78,7 +79,7 @@ canvas{
 
 .tarjeta{
     position: relative;
-    z-index: 5000;
+    z-index: 3999;
     margin: 0 15px;
     border-radius: 50%;
     width: 160px;
@@ -192,7 +193,7 @@ canvas{
     background-color: #173040;
     position: fixed;
     border: 1px solid gray;
-    top: 80px;
+    top: 160px;
     left: -400px;
     transition: 0.4s all ease;
 }

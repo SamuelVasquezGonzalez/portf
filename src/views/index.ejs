@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="multimedia/favicon.ico" type="image/x-icon">
     <script src="scripts/carga.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Samuel González</title>
 </head>
 <body class="body" id="particles-js">
@@ -23,19 +24,20 @@
         <p class="autor"></p>
     </div>
     <nav class="nav" id="inicio">
-        <ul>
-            <li class="activo"><a href="">Inicio</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a class="si" href="#acercade">Acerca de</a></li>
-            <li><a href="#contacto">Contactar</a></li>
+        <ul class="ul">
+            <li class="li activo"><a href="">Inicio</a></li>
+            <li class="li"><a href="#proyectos">Proyectos</a></li>
+            <li class="li"><a href="#habilidades">Habilidades</a></li>
+            <li class="li"><a class="si" href="#acercade">Acerca de</a></li>
+            <li class="li"><a href="#contacto">Contactar</a></li>
+            <span class="indicador"></span>
         </ul>
     </nav>
     <!-- --------------------------------- -->
     <!-- --------------------------------- -->
     <!-- --------------------------------- -->
     <header class="header">
-        <h1>SAMUEL GONZÁLEZ</h1>
+        <h1 id="cero">SAMUEL GONZÁLEZ</h1>
         <div class="container">
             <p class="parrafo negrilla dif">
                 LA ODISEA DE UN DESARROLLADOR WEB
@@ -55,7 +57,8 @@
         </div>
     </header>
     <main class="menu">
-        <h2 class="titulo" id="proyectos">Web</h2>
+        <span id="proyectos"></span>
+        <h2 class="titulo secciones" id="one">Web</h2>
         <p class="parrafo parrafo-azul">Proyectos que desarrolle o ayude a desarrollar como programador autodidacta</p>
 
         <div class="tarjetas">
@@ -76,7 +79,8 @@
                 <img class="img-tarjeta" src="multimedia/github.png" alt="">
             </div>
         </div>
-        <h2 class="titulo" id="habilidades">Habilidades</h2>
+        <span id="habilidades"></span>
+        <h2 class="titulo secciones" id="two">Habilidades</h2>
         <p class="parrafo parrafo-azul">Observemos la increible tecnologia con la que hacemos magia en la web</p>
         
         <button class="btn"><img class="img-comunes sin-negro" id="girando" src="multimedia/skate.gif" title="Clickeame"></button>
@@ -84,7 +88,7 @@
         <div class="info">
             <p class="parrafo negrilla">Si estamos hablando de desarrollo web principalmente, podemos ir observando en otros y en mi tecnologias como <b>HTML5</b> que se encarga del maquetado del sitio web. Tambien Tenemos <b>CSS3</b> que se encarga del diseño del sitio web, de darle forma. <b>Javascript</b> Que se encarga del dinamismo del sitio web, que la pagina tenga funcionalidad y este viva!</p>
             
-            <p class="parrafo negrilla">Actualmente estoy dominar Node.js y sus Modulos al igual que Express.js</p>
+            <p class="parrafo negrilla">Actualmente estoy intentando dominar Node.js y sus modulos al igual que Express.js</p>
         </div>
         <div class="habilidades" >
             <h3>Desarrollo Web</h3>
@@ -94,7 +98,7 @@
                     <p class="parrado negrilla hab">HTML5: MAQUETACIÓN</p>
                 </div>
                 <div class="habilidad">
-                    <img class="img-comunes pequeña" src="multimedia/css.png" alt="CSS3" title="CSS3">
+                    <img class="img-comunes pequeña"  src="multimedia/css.png" alt="CSS3" title="CSS3">
                     <p class="parrado negrilla hab">CSS3: ESTILOS DEL SITIO</p>
                 </div>
                 <div class="habilidad">
@@ -163,7 +167,8 @@
                 </div>
             </div>
         </div>
-        <h2 class="titulo" id="acercade">Acerca De</h3>
+        <span id="acercade"></span>
+        <h2 class="titulo secciones" id="three">Acerca De</h3>
         <img class="img" src="multimedia/skeleton-unscreen.gif">
         <p class="parrafo-azul">¿Que puede hacer un desarrollador Front-end Developer?</p>
         <div class="info">
@@ -179,13 +184,14 @@
             <p class="parrafo negrilla">
                 Puedo planificar, diseñar, construir, lanzar y mantener un sitio web yo mismo. Lastimosamente no cuento con certificados ni titulos que me mencionen como desarrollador, todos los conocimientos que tengo y voy obteniendo son gracias a cursos gratuitos que busco y completo.
             </p>
-            <i class="samsamuellogo" id="contacto"></i>
+            <span id="contacto"></span>
+            <i class="samsamuellogo" id="four"></i>
         </div>
     </main>
     <!-- ------------------------- -->
     <!-- ------------------------- -->
     <!-- ------------------------- -->
-    <form action="/correos" method="post" class="formulario">
+    <form action="/correos" method="post" class="formulario secciones">
         <h4 id="changeText">Envieme su correo</h2>
         <input type="text" name="nombre" class="input" placeholder="Nombre" maxlength="45" required>
         <input type="email" name="correo" class="input" placeholder="example@mail.com" max="155" required>
