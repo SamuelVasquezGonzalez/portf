@@ -21,6 +21,7 @@
                         <th>Nombre</th>
                         <th>Correo</th>
                         <th>Mensaje</th>
+                        <th>Estado</th>
                     </th>
                     <tr>
                         <% for(var i = 0; i < usuarios.length; i++){ %>
@@ -28,6 +29,10 @@
                                 <td><%= usuarios[i].nombre %></td>
                                 <td><%= usuarios[i].correo %></td>
                                 <td><%= usuarios[i].mensaje %></td>
+                                <td><form action="/borrarcorreo" method="post">
+                                    <input type="hidden" name="id" value="<%= usuarios[i].id %>">
+                                    <input type="submit" value="Delete">
+                                </form></td>
                             </tr>
                         <% } %>
                         </tr>

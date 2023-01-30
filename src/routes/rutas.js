@@ -36,6 +36,22 @@ app.post("/correos", (req, res) => {
   );
 });
 
+app.post('/borrarcorreo', (req, res)=>{
+  const id = req.body;
+  mysqlConnection.query(`DELETE FROM correos WHERE id = '${id.id}'`, (err, result)=>{
+    if(err){
+      console.log('No se pudo borrar el correo' + err)
+      res.redirect('/correos')
+      
+    }else{
+      console.log(result);
+      res.redirect('/correos')
+
+    }
+  })
+  console.log(id)
+})
+
 app.all("*", (req, res) => {
   const badUrl = req.originalUrl;
   res.render("../views/404.ejs", {
