@@ -1,15 +1,15 @@
 const app = require("../config/server");
 require("colors");
-const mysqlConnection = require("../config/db");
+const conex = require("../config/db");
 
 app.get("/", (req, res) => {
   res.render("../views/index.ejs");
 });
 
 app.get("/correos", (req, res) => {
-  mysqlConnection.query("SELECT * FROM correos", (err, result) => {
+  conex.query("SELECT * FROM correos", (err, result) => {
     if (err) {
-      console.log("ERROR".bgRed);
+      console.log("ERROR".bgRed + err);
     } else {
       res.render("../views/correos.ejs", {
         usuarios: result,
@@ -20,7 +20,7 @@ app.get("/correos", (req, res) => {
 
 app.post("/correos", (req, res) => {
   const { nombre, correo, mensaje } = req.body;
-  mysqlConnection.query(
+  conex.query(
     "INSERT INTO correos SET?",
     {
       nombre,
@@ -38,7 +38,7 @@ app.post("/correos", (req, res) => {
 
 app.post('/borrarcorreo', (req, res)=>{
   const id = req.body;
-  mysqlConnection.query(`DELETE FROM correos WHERE id = '${id.id}'`, (err, result)=>{
+  conex.query(`DELETE FROM correos WHERE id = '${id.id}'`, (err, result)=>{
     if(err){
       console.log('No se pudo borrar el correo' + err)
       res.redirect('/correos')
@@ -49,7 +49,6 @@ app.post('/borrarcorreo', (req, res)=>{
 
     }
   })
-  console.log(id)
 })
 
 app.all("*", (req, res) => {

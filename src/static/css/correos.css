@@ -1,0 +1,9 @@
+details{
+    font-size: 20px;
+}
+
+details > .details-margin{
+    margin-left: 25px;
+    padding: 12px;
+    background-color: rgb(216, 216, 216);
+}

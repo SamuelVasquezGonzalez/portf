@@ -1,24 +1,19 @@
-let botonGirar = document.querySelector(".btn");
-let imgGirar = document.getElementById("girando");
-botonGirar.addEventListener("click", rotar);
-
-numero = 0;
-function rotar() {
-  imgGirar.style.transform = `rotate(${(numero += -60)}deg)`;
-}
-
 // ------- cambiar imagen -----
+let imgMoneda = document.querySelector(".img-moneda")
+let rotado = true
+let btnActivarAnimacion = document.querySelector('.activarAnimacion');
+btnActivarAnimacion.addEventListener('click', girar);
 
-let imagenGirar = document.querySelector(".animacion");
-let yo = document.querySelector(".yo");
-let esqueleto = document.querySelector(".esqueleto");
-
-imagenGirar.addEventListener("click", cambiar);
-
-function cambiar() {
-  yo.classList.toggle("ocultado");
-  esqueleto.classList.toggle("ocultado");
+function girar () {
+  if(rotado == false){
+    imgMoneda.style.transform = `rotateY(${180}deg)`
+    rotado = true
+  }else{
+    imgMoneda.style.transform = `rotateY(${0}deg)`
+    rotado = false
+  }
 }
+// ----- Waypoints --------
 
 let aButton = document.querySelector(".si");
 if (screen.width < 399) {

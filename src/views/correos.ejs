@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="multimedia/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/correos.css">
     <title>Correos - Samuel González</title>
 </head>
 <body>
@@ -14,33 +15,20 @@
     </nav>
     
     <div class="container">
-        <div class="row">
-            <div class="w-100 mt-4 text-center">
-                <table class="table table-striped">
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Correo</th>
-                        <th>Mensaje</th>
-                        <th>Estado</th>
-                    </th>
-                    <tr>
-                        <% for(var i = 0; i < usuarios.length; i++){ %>
-                            <tr>
-                                <td><%= usuarios[i].nombre %></td>
-                                <td><%= usuarios[i].correo %></td>
-                                <td><%= usuarios[i].mensaje %></td>
-                                <td><form action="/borrarcorreo" method="post">
-                                    <input type="hidden" name="id" value="<%= usuarios[i].id %>">
-                                    <input type="submit" value="Delete">
-                                </form></td>
-                            </tr>
-                        <% } %>
-                        </tr>
-                </table>
-            </div>
-        </div>
+        <% for(var i = 0; i < usuarios.length; i++){ %>
+            <details>
+                <summary>Mensaje de: <b><%= usuarios[i].nombre %></b> </summary>
+                <div class="details-margin">
+                    <p><b>Mensaje:</b> <%= usuarios[i].mensaje %></p>
+                    <p><b>Correo de Contacto:</b> <a href="mailto:<%= usuarios[i].correo %>"><%= usuarios[i].correo %></a></p>
+                    <form action="/borrarcorreo" method="post">
+                        <input type="hidden" name="id" value="<%= usuarios[i].id %>">
+                        <input type="submit" value="Borrar Correo">
+                    </form>
+                </div>
+            </details>
+        <% } %>
     </div>
-
 
 </body>
 </html>
