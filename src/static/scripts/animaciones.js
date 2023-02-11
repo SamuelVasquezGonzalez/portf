@@ -19,6 +19,17 @@ let buttonUp = document.querySelector(".up").addEventListener("click", ()=>{
   window.scrollTo(0, 0)
 })
 
+// ------ ABRIR/CERRAR MENU ------
+let openBtn = document.querySelector(".open-btn")
+let closeBtn = document.querySelector(".close-btn")
+let navegacion = document.querySelector(".ul")
+openBtn.addEventListener("click", ()=>{
+  navegacion.classList.toggle("openclose")
+})
+closeBtn.addEventListener("click", ()=>{
+  navegacion.classList.toggle("openclose")
+})
+
 // ----- Waypoints --------
 
 let aButton = document.querySelector(".si");
@@ -88,13 +99,13 @@ var waypointThree = new Waypoint({
   offset: 95,
 });
 
-var waypointFour = new Waypoint({
-  element: four,
-  handler: function (direction) {
-    liList[4].classList.toggle("activo");
-    if (direction == "down") {
-      liList[3].classList.remove("activo");
-    }
-  },
-  offset: 97,
-});
+// var waypointFour = new Waypoint({
+//   element: four,
+//   handler: function (direction) {
+//     liList[4].classList.toggle("activo");
+//     if (direction == "down") {
+//       liList[3].classList.remove("activo");
+//     }
+//   },
+//   offset: 97,
+// });

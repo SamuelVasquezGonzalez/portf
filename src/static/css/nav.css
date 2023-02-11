@@ -57,3 +57,25 @@ li:hover > a{
     height: 50px;
 }
 
+.close-btn{
+    display: none;
+    font-size: 22px;
+}
+
+.open-btn{
+    display: none;
+    font-size: 22px;
+}
+
+.movile-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    display: none;
+}
+
+.movile-header > i{
+    font-size: 40px;
+}

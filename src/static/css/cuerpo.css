@@ -102,7 +102,7 @@ canvas{
 .satellite > img{
     opacity: 0.6;
     width: 100%;
-    animation:  girar 30s ease infinite;
+    animation:  girar 25s ease infinite;
 }
 
 @keyframes girar {
