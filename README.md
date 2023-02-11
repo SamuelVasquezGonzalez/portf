@@ -11,7 +11,10 @@
   - path
   
  https://portafoliopersonal.onrender.com/
- 
  this portfolio are hostined with render.com
+
+# To do list:
+- remplazar todas las rutas (imagenes, scripts, css, etc)
+
  
   
