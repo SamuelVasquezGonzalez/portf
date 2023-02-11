@@ -13,6 +13,12 @@ function girar () {
     rotado = false
   }
 }
+
+// ----- SUBIR LA PAGINA ------
+let buttonUp = document.querySelector(".up").addEventListener("click", ()=>{
+  window.scrollTo(0, 0)
+})
+
 // ----- Waypoints --------
 
 let aButton = document.querySelector(".si");
