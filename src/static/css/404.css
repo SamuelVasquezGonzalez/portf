@@ -1,5 +1,5 @@
-.sinbg{
-    background: none;
+body{
+    background-color: #173040;
 }
 
 .err{
@@ -27,11 +27,11 @@
 }
 
 .modal > h4{
-    color: black !important;
+    color: white !important;
 }
 
 .modal > a{
-    color: rgb(46, 46, 46) !important;
+    color: white(46, 46, 46) !important;
 }
 
 .modal > a:hover{
