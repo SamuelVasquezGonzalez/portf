@@ -14,7 +14,7 @@
  this portfolio are hostined with render.com
 
 # To do list:
-- remplazar todas las rutas (imagenes, scripts, css, etc)
+- nothing (fot the moment)
 
  
   
