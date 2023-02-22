@@ -5,7 +5,6 @@ const conex = require("../config/db");
 app.get("/", (req, res) => {
   res.render("../views/index.ejs");
 });
-
 app.get("/correos", (req, res) => {
   conex.query("SELECT * FROM correos", (err, result) => {
     if (err) {
