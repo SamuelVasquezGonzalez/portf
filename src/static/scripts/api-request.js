@@ -42,7 +42,7 @@ const guardarData = (data) => {
   crearTarjeta(diseñoWeb, data[1].googleIcons.imagen, data[1].googleIcons.parrafo)
   crearTarjeta(diseñoWeb, data[1].ps.imagen, data[1].ps.parrafo)
   
-  crearTarjeta(baseDatos, data[2].msql.imagen, data[2].msql.parrafo)
+  crearTarjeta(baseDatos, data[2].mysql.imagen, data[2].mysql.parrafo)
 
   crearTarjeta(herramientas, data[3].git.imagen, data[3].git.parrafo)
   crearTarjeta(herramientas, data[3].npm.imagen, data[3].npm.parrafo)
