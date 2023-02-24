@@ -19,17 +19,6 @@ let buttonUp = document.querySelector(".up").addEventListener("click", ()=>{
   window.scrollTo(0, 0)
 })
 
-// ------ ABRIR/CERRAR MENU ------
-let openBtn = document.querySelector(".open-btn")
-let closeBtn = document.querySelector(".close-btn")
-let navegacion = document.querySelector(".ul")
-openBtn.addEventListener("click", ()=>{
-  navegacion.classList.toggle("openclose")
-})
-closeBtn.addEventListener("click", ()=>{
-  navegacion.classList.toggle("openclose")
-})
-
 // ----- Waypoints --------
 
 let aButton = document.querySelector(".si");

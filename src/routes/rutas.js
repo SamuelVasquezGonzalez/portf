@@ -5,6 +5,7 @@ const conex = require("../config/db");
 app.get("/", (req, res) => {
   res.render("../views/index.ejs");
 });
+
 app.get("/correos", (req, res) => {
   conex.query("SELECT * FROM correos", (err, result) => {
     if (err) {
@@ -15,6 +16,10 @@ app.get("/correos", (req, res) => {
       });
     }
   });
+});
+
+app.get("/contact-me", (req, res) => {
+  res.render("../views/contacto.ejs");
 });
 
 app.post("/correos", (req, res) => {
@@ -30,7 +35,7 @@ app.post("/correos", (req, res) => {
       if (err) {
         console.log(`${err}`.bgRed);
       }
-      res.redirect("/");
+      res.redirect("/contact-me");
     }
   );
 });

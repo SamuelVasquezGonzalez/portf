@@ -1,3 +1,11 @@
+.formcontainer{
+    width: 100%;
+    height: 600%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .formulario{
     padding: 12px;
     background-color: #0e1c2586;
