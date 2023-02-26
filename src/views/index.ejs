@@ -27,7 +27,7 @@
  -->
     <link rel="author" href="https://github.com/SamuelVasquezGonzalez">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="shortcut icon" href="https://portafoliopersonal.onrender.com/multimedia/fav.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://samuelvasquezgonzalez.github.io/API-portf/multimedia/fav.ico" type="image/x-icon">
     <meta name="description" content="Mi nombre es samuel Vasquez Gonzalez y soy un programador front-end y back-end en la web. Este portafolio tiene informacion sobre proyectos que he realizado y como es mi forma de trabajo, tambien sobre mis conocimientos y caminos">
     <meta name="keywords" content="Samuel, Samuel Gonzalez, samuel gonzalez portafolio, desarrollo web, programador. trabajo, pagina"/>
     <meta name="author" content="Samuel Vásquez González"/>
@@ -61,14 +61,14 @@
             <div class="animacion activarAnimacion">
                 <div class="img-moneda" title="Dame Un click ;)">
                     <div class="frente">
-                        <img  src="https://portafoliopersonal.onrender.com/multimedia/skeleton.gif" alt="">
+                        <img class="banskeleton" src="" alt="">
                     </div>
                     <div class="atras">
-                        <img src="https://portafoliopersonal.onrender.com/multimedia/me.png" alt="">
+                        <img class="banyo" src="" alt="">
                     </div>
                 </div>
                 <div class="satellite">
-                    <img src="https://portafoliopersonal.onrender.com/multimedia/moon.png" alt="">
+                    <img class="banluna" src="" alt="">
                 </div>
             </div>
             <p class="parrafo italico">
@@ -87,26 +87,26 @@
         <div class="tarjetas">
             <div class="tarjeta headline">
                 <a class="a-tarjeta" href="https://lmgalery.onrender.com/" target="_blank"><p class="parrafo-tarjeta">LM-Galery: Galeria de fotos con Node.js</p></a>
-                <img class="img-tarjeta" src="https://portafoliopersonal.onrender.com/multimedia/lm-galery.png" alt="">
+                <img class="img-tarjeta pr" src="" alt="">
             </div>
             <div class="tarjeta headline">
                 <a class="a-tarjeta" href="https://samuelvasquezgonzalez.github.io/JuegoDadosJs/" target="_blank"><p class="parrafo-tarjeta">Juego De Dados con Javascript</p></a>
-                <img class="img-tarjeta" src="https://portafoliopersonal.onrender.com/multimedia/dados.png" alt="">
+                <img class="img-tarjeta pr" src="" alt="">
             </div>
             <div class="tarjeta headline">
                 <a class="a-tarjeta" href="https://github.com/SamuelVasquezGonzalez/DemongO" target="_blank"><p class="parrafo-tarjeta">Red Social de deportes extremos "DemongO" (sin terminar)</p></a>
-                <img class="img-tarjeta" src="https://portafoliopersonal.onrender.com/multimedia/demon.png" alt="">
+                <img class="img-tarjeta pr" src="" alt="">
             </div>
             <div class="tarjeta headline">
                 <a class="a-tarjeta" href="https://github.com/SamuelVasquezGonzalez?tab=repositories" target="_blank"><p class="parrafo-tarjeta">GitHub: Ver todos los repositorios +</p></a>
-                <img class="img-tarjeta" src="https://portafoliopersonal.onrender.com/multimedia/github.png" alt="">
+                <img class="img-tarjeta pr" src="" alt="">
             </div>
         </div>
         <span id="habilidades headline"></span>
         <h2 class="titulo secciones headline" id="two">Habilidades</h2>
         <p class="parrafo parrafo-azul headline">Observemos la increible tecnologia con la que hacemos magia en la web</p>
         
-        <button class="btn headline"><img class="img-comunes sin-negro" id="girando" src="https://portafoliopersonal.onrender.com/multimedia/skate.gif" title="Clickeame"></button>
+        <button class="btn headline"><img class="img-comunes sin-negro skater" id="girando" src=""></button>
    
         <div class="info headline">
             <p class="parrafo negrilla">Si estamos hablando de desarrollo web principalmente, podemos ir observando en otros y en mi tecnologias como <b>HTML5</b> que se encarga del maquetado del sitio web. Tambien Tenemos <b>CSS3</b> que se encarga del diseño del sitio web, de darle forma. <b>Javascript</b> Que se encarga del dinamismo del sitio web, que la pagina tenga funcionalidad y este viva!</p>
@@ -135,7 +135,7 @@
         </div>
         <span id="acercade"></span>
         <h2 class="titulo secciones headline" id="three">Acerca De</h3>
-        <img class="img" src="https://portafoliopersonal.onrender.com/multimedia/skeleton-unscreen.gif">
+        <img class="img skeletonS" src="">
         <p class="parrafo-azul headline">¿Que puede hacer un desarrollador Front-end Developer?</p>
         <div class="info">
             <p class="parrafo negrilla headline">
@@ -151,8 +151,8 @@
                 Puedo planificar, diseñar, construir, lanzar y mantener un sitio web yo mismo. Lastimosamente no cuento con certificados ni titulos que me mencionen como desarrollador, todos los conocimientos que tengo y voy obteniendo son gracias a cursos gratuitos que busco y completo.
             </p>
             <span id="contacto"></span>
-            <img src="../multimedia/logoVector.svg" class="pequeña" alt="">
-        </div>
+            <img src="  " class="pequeña vector" alt="">
+        </div> 
     </main>
     <!-- --------------------------------- -->
     <!-- --------------------------------- -->
@@ -185,6 +185,7 @@
     <script src="https://portafoliopersonal.onrender.com/scripts/app.js"></script>
     <script src="https://portafoliopersonal.onrender.com/scripts/animaciones.js"></script>
     <script src="https://portafoliopersonal.onrender.com/scripts/api-request.js"></script>
+    <script src="../scripts/media-request.js"></script>
     <script>
         ScrollReveal().reveal('.headline')
     </script>
