@@ -10,11 +10,11 @@
   - waypoints
   - path
   
- https://portafoliopersonal.onrender.com/
+ - [My Website](https://portafoliopersonal.onrender.com)
  this portfolio are hostined with render.com
 
 # To do list:
-- nothing (fot the moment)
+- update proyects and skills
 
  
   
