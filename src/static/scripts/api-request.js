@@ -41,8 +41,6 @@ const guardarData = (data) => {
     crearTarjeta(desarrolloWeb, data[0].css.imagen, data[0].css.parrafo)
     crearTarjeta(desarrolloWeb, data[0].js.imagen, data[0].js.parrafo)
 
-    crearTarjeta(diseñoWeb, data[1].fontAwesomeIcons.imagen, data[1].fontAwesomeIcons.parrafo)
-    crearTarjeta(diseñoWeb, data[1].googleIcons.imagen, data[1].googleIcons.parrafo)
     crearTarjeta(diseñoWeb, data[1].ps.imagen, data[1].ps.parrafo)
     crearTarjeta(diseñoWeb, data[1].ai.imagen, data[1].ai.parrafo)
     
@@ -50,10 +48,6 @@ const guardarData = (data) => {
 
     crearTarjeta(herramientas, data[3].git.imagen, data[3].git.parrafo)
     crearTarjeta(herramientas, data[3].npm.imagen, data[3].npm.parrafo)
-    crearTarjeta(herramientas, data[3].terminal.imagen, data[3].terminal.parrafo)
-    crearTarjeta(herramientas, data[3].vsc.imagen, data[3].vsc.parrafo)
-    crearTarjeta(herramientas, data[3].workbench.imagen, data[3].workbench.parrafo)
-    crearTarjeta(herramientas, data[3].xampp.imagen, data[3].xampp.parrafo)
 
     crearTarjeta(backend, data[4].nodeJs.imagen, data[4].nodeJs.parrafo)
     crearTarjeta(backend, data[4].express.imagen, data[4].express.parrafo)

@@ -96,7 +96,7 @@ canvas{
     background-color: #274759;
     box-shadow: -3px 10px 10px rgba(0, 0, 0, 0.485);
     position: absolute;
-    animation: rotar-satelite 15s ease-in-out infinite !important;
+    animation: rotar-satelite 15s linear infinite !important;
 }
 
 .satellite > img{
@@ -301,4 +301,41 @@ canvas{
 
 .autor::after{
     content: '"';
+}
+
+.rmsm{
+    width: 300px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    background-color: #11212b;
+    position: fixed;
+    top: 180px;
+    right: 80px;
+    transform: rotate(-15deg);
+    z-index: 9999;
+    border: 2px solid #485e81;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+.rmsm > img{
+    width: 70px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    animation: rotar 5s linear infinite;
+}
+
+@keyframes rotar {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.no-pointer{
+    cursor:default;
 }

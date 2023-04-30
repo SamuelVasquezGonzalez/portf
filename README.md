@@ -14,7 +14,7 @@
  this portfolio are hostined with render.com
 
 # To do list:
-- update proyects and skills
+- update proyects
 
  
   
