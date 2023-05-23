@@ -1,4 +1,5 @@
 const app = require("../config/server");
+const path = require("path")
 require("colors");
 const conex = require("../config/db");
 
@@ -20,6 +21,10 @@ app.get("/correos", (req, res) => {
 
 app.get("/contact-me", (req, res) => {
   res.render("../views/contacto.ejs");
+});
+
+app.get("/sitemap.xml", (req, res) => {
+  res.sendFile(path.join(__dirname, 'sitemap.xml'));
 });
 
 app.post("/correos", (req, res) => {
